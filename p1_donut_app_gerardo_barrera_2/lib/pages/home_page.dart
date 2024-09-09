@@ -12,8 +12,15 @@ class _HomePageState extends State<HomePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: Colors.blue,
-        leading: const Icon(Icons.menu, color: Colors.grey)
+        backgroundColor: Colors.transparent,
+        leading: 
+          Icon(Icons.menu, 
+          color: Colors.grey[800]
+          ),
+          actions: const [Padding(
+            padding: EdgeInsets.only(right: 24.0),
+            child: Icon(Icons.person),
+          )],
       ),
     );
   }
