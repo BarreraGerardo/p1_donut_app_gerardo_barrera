@@ -24,8 +24,8 @@ List<Widget> myTabs = [
     const MyTab(iconPath: 'lib/icons/pizza.png'),
     //pizza tab
     const MyTab(iconPath: 'lib/icons/smoothie.png'),
-
-    const MyTab(iconPath: "lib/icons/pancake.png"),
+    //pancake tab
+    const MyTab(iconPath: "lib/icons/pancakes.png"),
   ];
   @override
   Widget build(BuildContext context) {
@@ -67,13 +67,13 @@ List<Widget> myTabs = [
             //Tab bar
             TabBar(tabs: myTabs),
             //Tab bar view
-            const Expanded(
+             Expanded(
               child: TabBarView(children: [
-              DonutTab(),
-              BurgerTab(),
-              SmoothieTab(),
-              PancakeTab(),
-              PizzaTab()
+               DonutTab(),
+              const BurgerTab(),
+              const PizzaTab(),
+              const SmoothieTab(),
+              const PancakeTab()
             ],
             ),
             //Total del carrito
