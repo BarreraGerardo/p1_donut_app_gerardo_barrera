@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:p1_donut_app_gerardo_barrera_2/pages/home_page.dart';
-
 void main() {
   runApp(const MainApp());
 }
@@ -12,8 +11,10 @@ class MainApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home:  const HomePage(),
-      theme: ThemeData( tabBarTheme: const TabBarTheme(indicatorColor: Colors.pink)),
+      home: HomePage(
+    theme: ThemeData(
+        tabBarTheme: const TabBarTheme(indicatorColor: Colors.pink))
+        ),
       );
   }
 }
